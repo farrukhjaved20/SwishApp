@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:swish_app/views/Drawer/pages/Charginghistory/widget/ongoingcharge.dart';
 
 import 'package:swish_app/views/authentication/sigin.dart';
 
@@ -19,8 +20,8 @@ class MyApp extends StatelessWidget {
           useMaterial3: true,
         ),
         defaultTransition: Transition.rightToLeft,
-        transitionDuration: const Duration(milliseconds: 700),
-        home: const SignInPage(),
+        transitionDuration: const Duration(milliseconds: 800),
+        home: const OngoingCharging(),
       ),
     );
   }

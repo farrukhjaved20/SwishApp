@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:swish_app/constants/colors.dart';
-import 'package:swish_app/constants/fonts.dart';
 
 class Custombuttondesign extends StatelessWidget {
   final String title;
@@ -8,6 +7,7 @@ class Custombuttondesign extends StatelessWidget {
   final double height;
   final double width;
   final double fontSize;
+  final FontWeight fontWeight;
   final Color? buttonColor;
 
   const Custombuttondesign({
@@ -17,6 +17,7 @@ class Custombuttondesign extends StatelessWidget {
     this.height = 50.0,
     this.width = 250.0,
     this.fontSize = 14.0,
+    this.fontWeight = FontWeight.w400,
     this.buttonColor,
   });
 
@@ -24,12 +25,12 @@ class Custombuttondesign extends StatelessWidget {
   Widget build(BuildContext context) {
     return ElevatedButton(
       style: ButtonStyle(
-        shape: MaterialStatePropertyAll(
-          ContinuousRectangleBorder(borderRadius: BorderRadius.circular(12)),
+        shape: MaterialStateProperty.all(
+          RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
         ),
-        splashFactory: InkSparkle.constantTurbulenceSeedSplashFactory,
-        overlayColor: const MaterialStatePropertyAll(Colors.white60),
-        backgroundColor: MaterialStatePropertyAll(
+        splashFactory: InkRipple.splashFactory,
+        overlayColor: MaterialStateProperty.all(Colors.white60),
+        backgroundColor: MaterialStateProperty.all(
           buttonColor ?? AppColors.buttonColor,
         ),
       ),
@@ -40,11 +41,11 @@ class Custombuttondesign extends StatelessWidget {
         child: Center(
           child: Text(
             title,
-            style: StyleText.getRegularStyle(
+            style: TextStyle(
+              fontFamily: 'Inter',
               fontSize: fontSize,
               color: Colors.white,
-             
-              fontWeight: FontWeight.w400,
+              fontWeight: fontWeight,
             ),
           ),
         ),
