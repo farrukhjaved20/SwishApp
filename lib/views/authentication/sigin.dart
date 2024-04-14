@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:swish_app/constants/colors.dart';
-import 'package:swish_app/constants/dimensions.dart';
 import 'package:swish_app/constants/fonts.dart';
 import 'package:swish_app/controller/passwordcontroller.dart';
 import 'package:swish_app/views/authentication/signup.dart';
@@ -27,7 +26,7 @@ class SignInPage extends StatelessWidget {
                 children: [
                   Image.asset(
                     'assets/images/logo1.png',
-                    height: Dimensions.height50,
+                    height: height * 0.05,
                   )
                 ],
               ),

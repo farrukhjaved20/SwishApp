@@ -21,7 +21,7 @@ class StyleText {
 
   static TextStyle getBoldStyle({
     String fontFamily = customfont2,
-    FontWeight fontWeight = FontWeight.w900,
+    FontWeight fontWeight = FontWeight.w800,
     FontStyle fontStyle = FontStyle.normal,
     double fontSize = 16.0,
     Color color = Colors.black,

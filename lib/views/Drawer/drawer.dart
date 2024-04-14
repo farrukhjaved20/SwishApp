@@ -6,7 +6,7 @@ import 'package:swish_app/constants/fonts.dart';
 import 'package:swish_app/views/Drawer/pages/Charginghistory/charginghistory.dart';
 import 'package:swish_app/views/Drawer/pages/RFIDCards/cardone.dart';
 import 'package:swish_app/views/Drawer/pages/chats/chat.dart';
-import 'package:swish_app/views/Drawer/pages/notifications/notfication_Screen.dart';
+import 'package:swish_app/views/Drawer/pages/notifications/notfication_screen.dart';
 import 'package:swish_app/views/Drawer/pages/settings/settings_screen.dart';
 import 'package:swish_app/views/Drawer/pages/yourDetails/yourdetails.dart';
 import 'package:swish_app/views/home/homescreen.dart';

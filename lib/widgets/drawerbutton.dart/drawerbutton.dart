@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:swish_app/constants/dimensions.dart';
 
 class CardMenuIcon extends StatelessWidget {
   final VoidCallback onTap;
@@ -10,6 +9,7 @@ class CardMenuIcon extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var height = MediaQuery.sizeOf(context).height;
     return ElevatedButton(
       onPressed: onTap,
       style: ElevatedButton.styleFrom(
@@ -17,7 +17,7 @@ class CardMenuIcon extends StatelessWidget {
         foregroundColor: Colors.white,
         shape: const CircleBorder(),
       ),
-      child: Icon(size: Dimensions.height31, customIcon, color: Colors.black),
+      child: Icon(size: height * 0.035, customIcon, color: Colors.black),
     );
   }
 }
