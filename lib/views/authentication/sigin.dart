@@ -4,6 +4,7 @@ import 'package:swish_app/constants/colors.dart';
 import 'package:swish_app/constants/dimensions.dart';
 import 'package:swish_app/constants/fonts.dart';
 import 'package:swish_app/controller/passwordcontroller.dart';
+import 'package:swish_app/views/authentication/signup.dart';
 import 'package:swish_app/views/home/homescreen.dart';
 
 class SignInPage extends StatelessWidget {
@@ -145,7 +146,9 @@ class SignInPage extends StatelessWidget {
                 Padding(
                   padding: EdgeInsets.only(right: width * 0.04),
                   child: TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Get.to(() => const SignUpPage());
+                    },
                     child: Text(
                       "Sign Up",
                       style: StyleText.getRegularStyle(
